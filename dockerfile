@@ -2,7 +2,7 @@ FROM node:10
 
 # Create app directory
 
-WORKDIR /home/avinash/nodejs
+WORKDIR /home/ubuntu
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json and package-lock.json are copied
