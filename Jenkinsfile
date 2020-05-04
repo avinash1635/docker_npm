@@ -1,7 +1,7 @@
 pipeline
 {
     agent{
-        label 'slave'
+        label 'docker_slave'
     } 
     stages
     {
@@ -16,8 +16,7 @@ pipeline
         {
             steps
             {
-               sh "npm install"
-               sh "npm build"                           
+               sh "docker build -t npmfile ."                           
             }
         }
     }
