@@ -14,13 +14,10 @@ pipeline
         }
         stage ('continuous build')
         {
-            npm install
+            steps
             {
-                sh label: ", script: 'npm install'
-            }
-            npm build
-            {
-                sh label: ", script: 'npm build'
+               sh "npm install"
+               sh "npm build"
             }
         }
     }
