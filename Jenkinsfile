@@ -16,7 +16,8 @@ pipeline
         {
             steps
             {
-               docker build -t build1 .            
+               sh "npm install"
+               sh "npm build"                           
             }
         }
     }
